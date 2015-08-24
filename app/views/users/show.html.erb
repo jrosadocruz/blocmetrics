@@ -1,0 +1,12 @@
+<h1><%= @user.name %>'s Profile</h1>
+<ul>
+  <li><%= link_to 'Home', root_path %></li>
+  <li><%= link_to 'View all users', users_path %></li>
+  <li><%= link_to 'Create new user', new_user_path %></li>
+</ul>
+
+<p><strong>My email is:</strong> <%= @user.email %></p>
+
+<%= form_for @registered_app do |app| %>
+
+<% end %>

@@ -1,0 +1,12 @@
+<h1>User list</h1>
+<ul>
+  <li><%= link_to 'Home', root_path %></li>
+  <li><%= link_to 'View all users', users_path %></li>
+  <li><%= link_to 'Create new user', new_user_path %></li>
+</ul>
+<br>
+
+<% @users.each do |user| %>
+  <h3><%= link_to "#{user.name} (#{user.email})", user %></h3>
+  <hr>
+<% end %>
